@@ -25,8 +25,8 @@ def process_cell(cell_value):
     return ''.join(processed)
 
 # 获取文件路径
-input_file_path = r'D:\BaiduSyncdisk\工作文件\卡本\projects\新疆和田\0阶段成果\PD\0103-和田地区CCER项目集体权属土地清单.xlsx'
-output_file_path = r'D:\BaiduSyncdisk\工作文件\卡本\projects\新疆和田\0阶段成果\PD\0104-和田地区CCER项目集体权属土地清单.xlsx '
+input_file_path = input('请输入Excel文件的输入路径: ')
+output_file_path = input('请输入Excel文件的输出路径: ')
 
 # 打开Excel文件
 workbook = openpyxl.load_workbook(input_file_path)
@@ -42,3 +42,5 @@ for sheet in workbook:
 # 保存修改后的Excel文件
 workbook.save(output_file_path)
 
+input_file_path = r'D:\BaiduSyncdisk\工作文件\卡本\projects\新疆和田\0阶段成果\PD\0103-和田地区CCER项目集体权属土地清单.xlsx'
+output_file_path = r'D:\BaiduSyncdisk\工作文件\卡本\projects\新疆和田\0阶段成果\PD\0104-和田地区CCER项目集体权属土地清单.xlsx '
